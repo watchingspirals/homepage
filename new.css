@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&amp;display=swap');
+
+
+
+html,body {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    background: #232831;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+
+
+
+img {
+    height: 330px;
+    width: 630px;
+    object-fit: cover;
+    border: 2px solid #81a1c1;
+    /* border-bottom: none; */
+    margin-bottom: -3px;
+
+}
+
+nav {
+    color: #81a1c1;
+    background-color: #232831;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 0px;
+    text-align: center;
+    border: 2px solid #81a1c1;
+    border-top: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+
+}
+
+/* div.user {
+    background-color: #24283b;
+    color: white;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+div.taskbar {
+    color: #81a1c1;
+    background-color: #24283b;
+    border: 1px solid #81a1c1;
+    padding: 3px;   
+} */
+
+.clock-box {
+    position: relative;
+    color: #81a1c1;
+    background-color: #232831;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #81a1c1;
+
+}
+
+input {
+    background-color: #232831;
+    font: 16px 'Ubuntu Mono', monospace;
+    color: #81a1c1;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #81a1c1;
+    border-top: none;
+    text-align: center;
+    margin-top: 0px;
+    outline: none;
+    padding: 5px;
+  }
+
+input::placeholder {
+    color: #81a1c1;
+}

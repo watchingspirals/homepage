@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <title>new tab</title>
+        <link rel="stylesheet" href="new.css">
+
+    </head>
+    <body>
+      <div class="clock-box">
+
+        
+
+        <div id="clockbox"></div>
+
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+        
+        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+        
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+        
+
+        <div id="datebox"></div>
+
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('datebox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+
+      </div>
+     
+      <img src="ENSA.jpg" alt="anime girl">
+
+
+        <nav>
+            <ul>
+              <li><a href="https://www.youtube.com/">Youtube</a></li>
+              <li><a href="https://www.reddit.com/">Reddit</a></li>
+              <li><a href="https://www.twitter.com">Twitter</a></li>
+              <li><a href="http://www.4chan.org/">4Chan</a></li>
+              <li><a href="https://16chan.xyz/">16Chan</a></li>
+            </ul>
+        
+            <ul>
+              <li><a href="https://dcsdk12.instructure.com/">Canvas</a></li>
+              <li><a href="https://campus.dcsdk12.org/">Infinte Campus</a></li>
+              <li><a href="https://mail.google.com/mail/u/0/#inbox">Mail</a></li>
+              <li><a href="https://docs.google.com/document/u/0/?tgif=c">Google Docs</a></li>
+              <li><a href="https://cvhs.dcsdk12.org/">CVHS</a></li>
+            </ul>
+        
+            <ul>
+              <li><a href="https://1337x.to/home/">1337</a></li>
+              <li><a href="https://thepiratebay.org/">The Pirate Bay</a></li>
+              <li><a href="http://gen.lib.rus.ec/">Genlib</a></li>
+              <li><a href="https://www.amazon.com/">Amazon</a></li>
+              <li><a href="https://www.ebay.com/">Ebay</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://hulu.com/">Hulu</a></li>
+              <li><a href="https://netflix.com/">Netflix</a></li>
+              <li><a href="https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011">Prime Video</a></li>
+              <li><a href="https://goodsites.tech/">/g/'s Good Sites</a></li>
+              <li><a href="https://alpha.wallhaven.cc/">Wall Haven</a></li>
+            </ul>
+
+            
+
+          </nav>
+          <form autocomplete="off" action="https://duckduckgo.com/" method="GET" target="_blank">
+            <input autofocus
+                   name="q"
+                   type="search"
+                   placeholder=""
+                    tabindex="1">
+          </form>
+    </body>
+
+</html>
