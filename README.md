@@ -1,2 +1,2 @@
 # homepage
-<image src="example.jpg"></image>
+<image src="example.png"></image>
